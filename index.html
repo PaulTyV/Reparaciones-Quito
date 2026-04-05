@@ -4,76 +4,123 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Reparación de Lavadoras en Quito | Servicio Técnico</title>
+<title>Servicio Técnico en Quito | Lavadoras, Refrigeradoras, Secadoras, Calefones y Cocinas</title>
 
-<meta name="description" content="Reparación de lavadoras en Quito. Servicio rápido, técnico profesional y garantía. Atención a domicilio el mismo día.">
+<meta name="description" content="Servicio técnico en Quito. Reparación de lavadoras, secadoras, refrigeradoras, calefones eléctricos y cocinas de inducción. Atención a domicilio inmediata con garantía.">
 
 <style>
 body{
   margin:0;
-  font-family:Arial, sans-serif;
-  background:#f5f5f5;
+  font-family: Arial, sans-serif;
+  background:#f4f6f9;
   color:#111;
 }
 
+/* HEADER */
 header{
   background:#0f172a;
   color:white;
-  padding:15px;
   display:flex;
   justify-content:space-between;
-}
-
-.hero{
-  background:#111827;
-  color:white;
-  padding:60px 20px;
-  text-align:center;
-}
-
-.btn{
+  align-items:center;
   padding:15px 25px;
+}
+
+.logo{
+  font-weight:bold;
+  font-size:18px;
+}
+
+/* HERO */
+.hero{
+  background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+  url('https://images.unsplash.com/photo-1556911220-e15b29be8c8f');
+  background-size:cover;
+  background-position:center;
+  color:white;
+  text-align:center;
+  padding:90px 20px;
+}
+
+.hero h1{
+  font-size:34px;
+  margin-bottom:10px;
+}
+
+.hero p{
+  font-size:18px;
+}
+
+/* BOTONES */
+.btn{
+  display:inline-block;
+  padding:14px 26px;
+  margin:10px;
   border-radius:6px;
   text-decoration:none;
-  margin:10px;
-  display:inline-block;
   font-weight:bold;
 }
 
 .call{background:#22c55e;color:white;}
 .whatsapp{background:#25d366;color:white;}
 
+/* CONTENIDO */
 .section{
-  padding:40px 20px;
-  max-width:900px;
-  margin:auto;
+  max-width:1000px;
+  margin:20px auto;
   background:white;
-  margin-top:20px;
+  padding:30px;
   border-radius:8px;
 }
 
+/* SERVICIOS */
+.services{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:15px;
+}
+
+.card{
+  background:#f8fafc;
+  border-radius:8px;
+  overflow:hidden;
+  text-align:center;
+}
+
+.card img{
+  width:100%;
+  height:150px;
+  object-fit:cover;
+}
+
+.card h3{
+  padding:10px;
+}
+
+/* LISTAS */
 ul{
   padding-left:20px;
 }
 
+/* FOOTER */
 footer{
   background:black;
   color:white;
   text-align:center;
   padding:20px;
-  margin-top:20px;
 }
 
-/* BOTÓN WHATSAPP */
+/* WHATSAPP */
 .whatsapp-float{
   position:fixed;
   bottom:20px;
   right:20px;
   background:#25d366;
+  color:white;
   padding:15px;
   border-radius:50%;
   text-decoration:none;
-  color:white;
+  font-size:20px;
 }
 </style>
 </head>
@@ -81,65 +128,86 @@ footer{
 <body>
 
 <header>
-  <div><b>Servicio Técnico Quito</b></div>
+  <div class="logo">Servicio Técnico Quito</div>
   <div>📞 +593 95 870 7904</div>
 </header>
 
 <section class="hero">
-  <h1>Reparación de Lavadoras en Quito</h1>
-  <p>Servicio profesional a domicilio con garantía</p>
+  <h1>Reparación de Electrodomésticos en Quito</h1>
+  <p>Lavadoras, secadoras, refrigeradoras, calefones y cocinas de inducción</p>
 
   <a href="tel:+593958707904" class="btn call">📞 Llamar ahora</a>
-  <a href="https://wa.me/593958707904?text=Hola%20necesito%20reparar%20mi%20lavadora" class="btn whatsapp">💬 WhatsApp</a>
+  <a href="https://wa.me/593958707904?text=Hola%20necesito%20servicio%20técnico" class="btn whatsapp">💬 WhatsApp</a>
 </section>
 
 <section class="section">
-  <h2>Servicio técnico de lavadoras</h2>
+  <h2>Servicio técnico en Quito a domicilio</h2>
 
   <p>
-  Reparamos lavadoras de todas las marcas. Contamos con técnicos especializados para solucionar cualquier tipo de falla de forma rápida y segura.
+  Ofrecemos reparación de electrodomésticos en Quito con atención inmediata. Técnicos especializados en lavadoras, secadoras, refrigeradoras, calefones eléctricos y cocinas de inducción.
   </p>
 
-  <p><b>✔ Atención inmediata</b></p>
   <p><b>✔ Servicio a domicilio</b></p>
+  <p><b>✔ Diagnóstico rápido</b></p>
   <p><b>✔ Garantía en todas las reparaciones</b></p>
+</section>
+
+<section class="section">
+  <h2>Servicios</h2>
+
+  <div class="services">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1626806787461-102c1bfaaea1">
+      <h3>Reparación de lavadoras</h3>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1598514982841-1b9b4c8d9c65">
+      <h3>Reparación de secadoras</h3>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952">
+      <h3>Refrigeradoras</h3>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c">
+      <h3>Cocinas de inducción</h3>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
+      <h3>Calefones eléctricos</h3>
+    </div>
+
+  </div>
 </section>
 
 <section class="section">
   <h2>Problemas que solucionamos</h2>
 
   <ul>
-    <li>Lavadora no enciende</li>
-    <li>No centrifuga</li>
-    <li>No drena el agua</li>
-    <li>Hace ruido fuerte</li>
-    <li>Fuga de agua</li>
-    <li>Problemas electrónicos</li>
+    <li>Lavadora no enciende o no centrifuga</li>
+    <li>Refrigeradora no enfría</li>
+    <li>Secadora no calienta</li>
+    <li>Cocina de inducción no prende</li>
+    <li>Calefón no calienta agua</li>
   </ul>
 </section>
 
 <section class="section">
-  <h2>¿Por qué elegirnos?</h2>
+  <h2>Contáctanos</h2>
 
-  <ul>
-    <li>✔ Técnicos con experiencia</li>
-    <li>✔ Atención el mismo día</li>
-    <li>✔ Precios justos</li>
-    <li>✔ Servicio garantizado</li>
-  </ul>
-</section>
-
-<section class="section">
-  <h2>Contáctanos ahora</h2>
-
-  <p>Estamos listos para ayudarte. Llámanos o escríbenos por WhatsApp.</p>
+  <p>Llámanos o escríbenos por WhatsApp para atención inmediata.</p>
 
   <a href="tel:+593958707904" class="btn call">📞 Llamar ahora</a>
   <a href="https://wa.me/593958707904" class="btn whatsapp">💬 WhatsApp</a>
 </section>
 
 <footer>
-  © Servicio Técnico Quito | +593 95 870 7904
+  © Servicio Técnico Quito | Atención inmediata
 </footer>
 
 <a href="https://wa.me/593958707904" class="whatsapp-float">💬</a>
