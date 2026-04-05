@@ -3,124 +3,139 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Servicio Técnico en Quito | Reparación de Electrodomésticos</title>
 
-<title>Reparación de Electrodomésticos en Quito | Servicio Técnico 24/7</title>
+<meta name="description" content="Reparación profesional de lavadoras, secadoras, refrigeradoras y calefones en Quito. Atención inmediata a domicilio.">
 
 <style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f5f7fa;
+body{
+  margin:0;
+  font-family: 'Segoe UI', sans-serif;
+  background:#0b1220;
+  color:white;
 }
 
 /* HEADER */
-header {
-  background: #0f172a;
-  color: white;
-  padding: 15px;
-  display: flex;
-  justify-content: space-between;
+header{
+  display:flex;
+  justify-content:space-between;
+  padding:15px 20px;
+  background:#020617;
+  position:sticky;
+  top:0;
+}
+
+header b{
+  color:#22c55e;
 }
 
 /* HERO */
-.hero {
-  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+.hero{
+  text-align:center;
+  padding:80px 20px;
+  background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
   url('https://images.unsplash.com/photo-1581578731548-c64695cc6952');
-  background-size: cover;
-  background-position: center;
-  color: white;
-  text-align: center;
-  padding: 80px 20px;
+  background-size:cover;
 }
 
-.hero h1 {
-  font-size: 30px;
+.hero h1{
+  font-size:32px;
 }
 
-.btn {
-  padding: 14px 22px;
-  border-radius: 6px;
-  text-decoration: none;
-  margin: 10px;
-  display: inline-block;
-  font-weight: bold;
+.btn{
+  padding:14px 24px;
+  border-radius:6px;
+  text-decoration:none;
+  margin:10px;
+  display:inline-block;
+  font-weight:bold;
 }
 
-.call { background: #22c55e; color: white; }
-.whatsapp { background: #25d366; color: white; }
+.call{background:#22c55e;color:white;}
+.whatsapp{background:#25d366;color:white;}
 
-/* BENEFICIOS */
-.benefits {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 20px;
-  background: white;
-  gap: 10px;
+/* BENEFITS */
+.benefits{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:10px;
+  padding:20px;
 }
 
-.benefit {
-  background: #e2e8f0;
-  padding: 10px 15px;
-  border-radius: 5px;
+.benefit{
+  background:#1e293b;
+  padding:10px 15px;
+  border-radius:5px;
 }
 
-/* SERVICIOS */
-.section {
-  padding: 40px 20px;
-  max-width: 1000px;
-  margin: auto;
+/* SERVICES */
+.section{
+  padding:50px 20px;
+  max-width:1100px;
+  margin:auto;
 }
 
-.services {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 15px;
+.services{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
 }
 
-.card {
-  background: white;
-  border-radius: 8px;
-  overflow: hidden;
-  text-align: center;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+.card{
+  background:#020617;
+  border-radius:10px;
+  overflow:hidden;
+  box-shadow:0 5px 15px rgba(0,0,0,0.5);
+  transition:0.3s;
 }
 
-.card img {
-  width: 100%;
+.card:hover{
+  transform:scale(1.05);
 }
 
-.card h3 {
-  padding: 10px;
+.card img{
+  width:100%;
+  height:160px;
+  object-fit:cover;
+}
+
+.card h3{
+  padding:15px;
 }
 
 /* TESTIMONIOS */
-.review {
-  background: white;
-  padding: 15px;
-  margin: 10px 0;
-  border-radius: 6px;
+.review{
+  background:#020617;
+  padding:20px;
+  border-radius:10px;
+  margin:10px 0;
+}
+
+/* CTA FINAL */
+.cta{
+  text-align:center;
+  padding:60px 20px;
+  background:#020617;
 }
 
 /* FOOTER */
-footer {
-  background: black;
-  color: white;
-  text-align: center;
-  padding: 20px;
+footer{
+  text-align:center;
+  padding:20px;
+  background:black;
 }
 
 /* WHATSAPP FLOAT */
-.whatsapp-float {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #25d366;
-  color: white;
-  padding: 15px;
-  border-radius: 50%;
-  text-decoration: none;
-  font-size: 20px;
+.whatsapp-float{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25d366;
+  padding:15px;
+  border-radius:50%;
+  text-decoration:none;
+  font-size:20px;
 }
 </style>
 </head>
@@ -144,7 +159,7 @@ footer {
   <div class="benefit">✔ Atención inmediata</div>
   <div class="benefit">✔ Servicio a domicilio</div>
   <div class="benefit">✔ Técnicos certificados</div>
-  <div class="benefit">✔ Garantía</div>
+  <div class="benefit">✔ Garantía real</div>
 </section>
 
 <section class="section">
@@ -153,32 +168,32 @@ footer {
   <div class="services">
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1626806787461-102c1bfaaea1">
+      <img src="https://images.unsplash.com/photo-1604335399105-a0c585fd81a1">
       <h3>Lavadoras</h3>
     </div>
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c">
+      <img src="https://images.unsplash.com/photo-1598514982841-1b9b4c8d9c65">
       <h3>Secadoras</h3>
     </div>
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1586201375792-1c92d6c1c7c3">
+      <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952">
       <h3>Refrigeradoras</h3>
     </div>
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1581579188871-45ea61f2a6d9">
+      <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c">
       <h3>Cocinas de inducción</h3>
     </div>
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1598300056393-4aac492f4344">
+      <img src="https://images.unsplash.com/photo-1615874959474-d609969a20ed">
       <h3>Calefones a gas</h3>
     </div>
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115">
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
       <h3>Calefones eléctricos</h3>
     </div>
 
@@ -188,8 +203,15 @@ footer {
 <section class="section">
   <h2 style="text-align:center;">Clientes satisfechos</h2>
 
-  <div class="review">⭐️⭐️⭐️⭐️⭐️ Excelente servicio, llegaron rápido</div>
-  <div class="review">⭐️⭐️⭐️⭐️⭐️ Muy profesionales</div>
+  <div class="review">⭐️⭐️⭐️⭐️⭐️ Llegaron rápido y solucionaron todo</div>
+  <div class="review">⭐️⭐️⭐️⭐️⭐️ Muy profesionales, recomendados</div>
+</section>
+
+<section class="cta">
+  <h2>¿Necesitas ayuda urgente?</h2>
+  <p>Contáctanos ahora y resolvemos hoy mismo</p>
+
+  <a href="tel:+593958707904" class="btn call">📞 Llamar ahora</a>
 </section>
 
 <footer>
