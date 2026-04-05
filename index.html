@@ -4,18 +4,21 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Reparación de electrodomésticos en Quito | Servicio Técnico Profesional</title>
+<title>Reparación de electrodomésticos en Quito | Lavadoras, Refrigeradoras, Calefones</title>
 
-<meta name="description" content="Servicio técnico líder en Quito. Reparación y mantenimiento experto de lavadoras, refrigeradoras, calefones y cocinas. Atención inmediata a domicilio con garantía oficial.">
-<meta name="keywords" content="reparación lavadoras Quito, técnico línea blanca Quito, arreglo refrigeradoras, mantenimiento calefones Quito">
+<!-- SEO MEGA DIOS PARA GOOGLE ADS -->
+<meta name="description" content="Servicio técnico líder en Quito. Reparación y mantenimiento experto de lavadoras, refrigeradoras, calefones y cocinas. ¡Atención hoy mismo a domicilio con garantía oficial!">
+<meta name="keywords" content="reparación lavadoras Quito, técnico línea blanca Quito, arreglo refrigeradoras, mantenimiento calefones Quito, reparación secadoras Quito">
+<meta name="geo.region" content="EC-P" />
+<meta name="geo.placename" content="Quito" />
+<meta name="robots" content="index, follow">
 
 <style>
-    /* VARIABLES DE DISEÑO PREMIUM */
     :root {
         --primary-glow: #00ffff;
         --accent-green: #22c55e;
-        --glass-bg: rgba(15, 23, 42, 0.8);
-        --border-glass: rgba(0, 255, 255, 0.2);
+        --glass-bg: rgba(15, 23, 42, 0.85);
+        --border-glass: rgba(0, 255, 255, 0.25);
     }
 
     body {
@@ -27,9 +30,10 @@
         scroll-behavior: smooth;
     }
 
+    /* HEADER TIPO CASA BLANCA */
     header {
         background: rgba(2, 6, 23, 0.95);
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(12px);
         display: flex;
         justify-content: space-between;
         padding: 15px 5%;
@@ -38,130 +42,150 @@
         position: sticky;
         top: 0;
         z-index: 1000;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.5);
     }
 
-    .logo { display: flex; align-items: center; font-weight: bold; font-size: 1.2rem; }
-    .logo img { height: 50px; margin-right: 12px; border-radius: 8px; border: 1px solid var(--border-glass); }
+    .logo { display: flex; align-items: center; font-weight: bold; font-size: 1.3rem; }
+    .logo img { height: 55px; margin-right: 12px; border-radius: 8px; border: 1px solid var(--border-glass); }
 
-    /* HERO SECTION MEJORADA */
+    /* HERO SECTION IMPACTANTE */
     .hero {
         background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
                     url('Messenger_creation_CFE11514-811B-40EC-BF57-596DE2BA0635.jpeg') center/cover no-repeat;
         padding: 140px 20px;
         text-align: center;
+        border-bottom: 1px solid var(--border-glass);
     }
 
     .hero h1 {
-        font-size: clamp(28px, 5vw, 48px);
-        font-weight: 800;
+        font-size: clamp(30px, 6vw, 52px);
+        font-weight: 900;
         color: #ffffff;
         text-transform: uppercase;
         letter-spacing: -1px;
-        text-shadow: 0 0 20px rgba(0,255,255,0.6);
-        background: rgba(0,0,0,0.5);
-        padding: 20px;
-        border-radius: 12px;
+        text-shadow: 0 0 25px rgba(0,255,255,0.7);
+        background: rgba(0,0,0,0.55);
+        padding: 20px 30px;
+        border-radius: 15px;
         border: 1px solid var(--border-glass);
         display: inline-block;
+        margin-bottom: 20px;
     }
 
     .hero p {
-        font-size: 22px;
-        background: rgba(0, 255, 255, 0.1);
-        backdrop-filter: blur(5px);
-        padding: 10px 25px;
+        font-size: 24px;
+        background: rgba(0, 255, 255, 0.15);
+        backdrop-filter: blur(8px);
+        padding: 12px 30px;
         border-radius: 50px;
-        margin-top: 20px;
         border: 1px solid var(--border-glass);
+        display: inline-block;
+        font-weight: bold;
     }
 
     /* BOTONES DE ALTA CONVERSIÓN */
-    .btn-wrap { margin-top: 30px; display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
+    .btn-wrap { margin-top: 35px; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
     
     .btn {
-        padding: 18px 35px;
+        padding: 20px 40px;
         border-radius: 50px;
         color: white;
         text-decoration: none;
-        font-weight: bold;
-        transition: all 0.3s ease;
+        font-weight: 900;
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         text-transform: uppercase;
-        box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        letter-spacing: 1px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+        display: inline-flex;
+        align-items: center;
     }
 
-    .llamar { background: #3b82f6; border: 1px solid #60a5fa; }
-    .whatsapp { background: var(--accent-green); border: 1px solid #4ade80; }
-    .btn:hover { transform: translateY(-3px); filter: brightness(1.1); box-shadow: 0 15px 30px rgba(0,255,255,0.2); }
+    .llamar { background: #3b82f6; border: 2px solid #60a5fa; }
+    .whatsapp { background: var(--accent-green); border: 2px solid #4ade80; }
+    .btn:hover { transform: translateY(-5px) scale(1.05); filter: brightness(1.2); box-shadow: 0 20px 40px rgba(0,255,255,0.3); }
 
-    /* SERVICIOS ESTILO CASA BLANCA */
-    .servicios { padding: 80px 5%; text-align: center; }
-    .servicios h2 { font-size: 32px; margin-bottom: 40px; color: var(--primary-glow); }
+    /* MARCAS */
+    .marcas { padding: 80px 5%; text-align: center; background: rgba(2, 6, 23, 0.4); }
+    .marcas h2 { color: var(--primary-glow); margin-bottom: 10px; }
+    .marcas img { 
+        max-width: 500px; width: 100%; border-radius: 20px; 
+        box-shadow: 0 0 40px rgba(0, 255, 255, 0.25); margin: 35px 0;
+        transition: 0.5s;
+    }
+    .marcas img:hover { transform: scale(1.03); }
 
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+    /* SERVICIOS ULTRA DETALLADOS */
+    .servicios { padding: 100px 5%; text-align: center; }
+    .servicios h2 { font-size: 36px; margin-bottom: 50px; color: var(--primary-glow); text-transform: uppercase; }
+
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 35px; max-width: 1300px; margin: 0 auto; }
 
     .card {
         background: var(--glass-bg);
-        padding: 25px;
-        border-radius: 20px;
+        padding: 30px;
+        border-radius: 25px;
         border: 1px solid var(--border-glass);
-        transition: 0.4s ease;
+        transition: 0.5s ease;
         text-align: left;
+        display: flex;
+        flex-direction: column;
     }
 
-    .card:hover { border-color: var(--primary-glow); transform: scale(1.02); }
-    .card img { width: 100%; border-radius: 12px; margin-bottom: 20px; border: 1px solid #1e293b; }
-    .card h3 { color: var(--primary-glow); margin: 10px 0; font-size: 22px; }
+    .card:hover { border-color: var(--primary-glow); transform: translateY(-10px); box-shadow: 0 15px 45px rgba(0, 255, 255, 0.15); }
+    .card img { width: 100%; border-radius: 15px; margin-bottom: 20px; border: 1px solid #1e293b; transition: 0.3s; }
+    .card h3 { color: var(--primary-glow); margin: 15px 0; font-size: 24px; font-weight: 800; }
+    .card small { font-size: 16px; color: #94a3b8; line-height: 1.5; }
 
-    /* SECCIÓN MARCAS */
-    .marcas { padding: 60px 5%; text-align: center; background: rgba(2, 6, 23, 0.5); }
-    .marcas img { 
-        max-width: 450px; width: 100%; border-radius: 15px; 
-        box-shadow: 0 0 30px rgba(0, 255, 255, 0.2); margin: 30px 0;
-    }
-
-    /* RESEÑAS */
-    .reseñas { padding: 80px 5%; text-align: center; }
+    /* RESEÑAS PROFESIONALES */
+    .reseñas { padding: 100px 5%; text-align: center; background: rgba(0,0,0,0.2); }
     .reseña {
         background: var(--glass-bg);
-        padding: 25px;
-        border-radius: 15px;
+        padding: 30px;
+        border-radius: 20px;
         margin: 15px;
         display: inline-block;
-        width: 300px;
-        border-top: 3px solid var(--primary-glow);
+        width: 320px;
+        border-top: 4px solid var(--primary-glow);
+        text-align: left;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
     }
 
+    /* FOOTER IMPACTANTE */
     .final {
         background: linear-gradient(90deg, #001a33, #004d4d, #001a33);
-        padding: 50px;
+        padding: 60px 20px;
         text-align: center;
-        font-size: 24px;
-        font-weight: bold;
+        font-size: 26px;
+        font-weight: 900;
         color: var(--primary-glow);
+        border-top: 2px solid var(--primary-glow);
+        text-shadow: 0 0 15px var(--primary-glow);
     }
 
+    /* BOTÓN WHATSAPP FLOTANTE DIOS */
     .whatsapp-float {
         position: fixed;
-        bottom: 30px;
-        right: 30px;
+        bottom: 35px;
+        right: 35px;
         background: var(--accent-green);
-        width: 65px;
-        height: 65px;
+        width: 70px;
+        height: 70px;
         border-radius: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
         color: white;
-        font-size: 35px;
+        font-size: 40px;
         text-decoration: none;
-        box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+        box-shadow: 0 15px 35px rgba(0,0,0,0.6);
         z-index: 9999;
-        animation: swing 2s infinite;
+        animation: pulse-green 2s infinite;
     }
 
-    @keyframes swing { 
-        0%, 100% { transform: rotate(-5deg); } 
-        50% { transform: rotate(5deg) scale(1.1); } 
+    @keyframes pulse-green {
+        0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7); }
+        70% { transform: scale(1.1); box-shadow: 0 0 0 20px rgba(34, 197, 94, 0); }
+        100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
     }
 </style>
 </head>
@@ -170,15 +194,15 @@
 
 <header>
     <div class="logo">
-        <img src="Messenger_creation_B0E9F509-8D6F-4114-BB93-D598F4F19911.jpeg" alt="Logo Servicio Técnico">
-        <span>TÉCNICO PROFESIONAL QUITO</span>
+        <img src="Messenger_creation_B0E9F509-8D6F-4114-BB93-D598F4F19911.jpeg" alt="Logo Servicio Técnico Premium Quito">
+        <span>TECNI-QUITO PRO 🇪🇨</span>
     </div>
-    <div style="font-weight: bold; color: var(--primary-glow);">☏ 095 870 7904</div>
+    <div style="font-weight: 900; color: var(--primary-glow); font-size: 1.2rem;">☏ 095 870 7904</div>
 </header>
 
 <section class="hero">
     <h1>Reparación de electrodomésticos en Quito</h1>
-    <p>Servicio técnico profesional con garantía por escrito</p>
+    <p>Servicio Técnico Élite con Garantía Escrita Oficial</p>
     
     <div class="btn-wrap">
         <a href="tel:+593958707904" class="btn llamar">📞 LLAMAR AHORA</a>
@@ -187,63 +211,63 @@
 </section>
 
 <section class="marcas">
-    <h2>Especialistas en Marcas Globales</h2>
+    <h2>Especialistas en Tecnología Global</h2>
+    <p style="color: #94a3b8;">Soporte Técnico Autorizado Multimarca</p>
     <a href="https://wa.me">
-        <img src="Messenger_creation_D86CC0EC-8D94-4399-9F1A-A4CF93C2D70B.jpeg" alt="Soporte Multimarca">
+        <img src="Messenger_creation_D86CC0EC-8D94-4399-9F1A-A4CF93C2D70B.jpeg" alt="Repuestos Originales Quito">
     </a>
-    <p style="font-size: 20px; color: #94a3b8;">
-        Repuestos 100% originales:<br>
+    <p style="font-size: 22px;">
         <strong>Whirlpool • Samsung • LG • Mabe • General Electric • Indurama • Teka</strong>
     </p>
 </section>
 
 <section class="servicios">
-    <h2>Soluciones de Ingeniería a Domicilio</h2>
+    <h2>Nuestros Servicios de Ingeniería</h2>
     <div class="grid">
         <div class="card">
-            <img src="Messenger_creation_CC164A15-A128-4441-960A-078C1CBBE307.jpeg" alt="Reparación de Lavadoras">
+            <img src="Messenger_creation_CC164A15-A128-4441-960A-078C1CBBE307.jpeg" alt="Servicio Técnico de Lavadoras Quito">
             <h3>Arreglo de Lavadoras</h3>
-            <p><small>Reparación y mantenimiento profesional de lavadoras con diagnóstico preciso, solución inmediata y garantía oficial en Quito.</small></p>
+            <small>Reparación y mantenimiento profesional de lavadoras con diagnóstico preciso, solución inmediata y garantía oficial para que su equipo funcione como nuevo desde el primer servicio.</small>
         </div>
 
         <div class="card">
-            <img src="Messenger_creation_7275BC92-FB74-4E36-B05C-CADBE635A66E.jpeg" alt="Reparación de Calefones">
+            <img src="Messenger_creation_7275BC92-FB74-4E36-B05C-CADBE635A66E.jpeg" alt="Mantenimiento de Calefones Quito">
             <h3>Arreglo de Calefones</h3>
-            <p><small>Servicio técnico de calefones a gas y eléctricos con técnicos certificados para máxima seguridad y confort térmico.</small></p>
+            <small>Reparación y mantenimiento de calefones a gas y eléctricos con atención rápida, máxima seguridad y técnicos certificados que solucionan el problema de raíz.</small>
         </div>
 
         <div class="card">
-            <img src="Messenger_creation_D34B492E-0B29-4A41-AF62-DCECCB2AFDB4.jpeg" alt="Reparación de Secadoras">
+            <img src="Messenger_creation_D34B492E-0B29-4A41-AF62-DCECCB2AFDB4.jpeg" alt="Técnico de Secadoras Quito">
             <h3>Arreglo de Secadoras</h3>
-            <p><small>Soluciones efectivas en secadoras industriales y domésticas. Ahorro de energía y resultados garantizados hoy mismo.</small></p>
+            <small>Servicio de reparación y mantenimiento de secadoras con soluciones efectivas, ahorro de tiempo y resultados garantizados en la primera visita técnica.</small>
         </div>
 
         <div class="card">
-            <img src="Messenger_creation_2C602D01-B200-460C-B30C-A7C5BD51ADFB.jpeg" alt="Cocinas de Inducción">
+            <img src="Messenger_creation_2C602D01-B200-460C-B30C-A7C5BD51ADFB.jpeg" alt="Reparación de Cocinas Inducción Quito">
             <h3>Cocinas de Inducción</h3>
-            <p><small>Reparación técnica de circuitos y tarjetas con repuestos originales para máxima durabilidad de su cocina.</small></p>
+            <small>Reparación y mantenimiento técnico de cocinas de inducción con repuestos originales y mano de obra calificada para asegurar la máxima durabilidad.</small>
         </div>
 
         <div class="card">
-            <img src="Messenger_creation_EB1CE184-2734-4C36-ADBA-C153E5877C6B.jpeg" alt="Reparación de Refrigeradoras">
-            <h3>Arreglo de Refrigeradoras</h3>
-            <p><small>Diagnóstico avanzado y atención urgente para proteger su inversión y alimentos. Servicio técnico especializado.</small></p>
+            <img src="Messenger_creation_EB1CE184-2734-4C36-ADBA-C153E5877C6B.jpeg" alt="Reparación de Refrigeradoras Quito">
+            <h3>Refrigeradoras</h3>
+            <small>Reparación y mantenimiento de refrigeradoras con diagnóstico exacto, atención urgente y garantía para proteger sus alimentos y su inversión familiar.</small>
         </div>
     </div>
 </section>
 
 <section class="reseñas">
-    <h2>Confianza Certificada</h2>
-    <div class="reseña">⭐⭐⭐⭐⭐<br><b>- Carlos:</b> "Servicio impecable, mi lavadora quedó como nueva el mismo día."</div>
-    <div class="reseña">⭐⭐⭐⭐⭐<br><b>- Andrea:</b> "Técnicos muy profesionales y educados. Recomendados en Quito."</div>
-    <div class="reseña">⭐⭐⭐⭐⭐<br><b>- Luis:</b> "Garantía real. Solucionaron la falla de mi refrigerador en 1 hora."</div>
+    <h2>Confianza de Nuestros Clientes</h2>
+    <div class="reseña">⭐⭐⭐⭐⭐<br><b>- Carlos:</b> "Excelente servicio técnico, rápido y profesional."</div>
+    <div class="reseña">⭐⭐⭐⭐⭐<br><b>- Andrea:</b> "Solucionaron el problema de mi lavadora el mismo día. Muy recomendados."</div>
+    <div class="reseña">⭐⭐⭐⭐⭐<br><b>- Luis:</b> "Técnicos de confianza y garantía real. El mejor servicio de Quito."</div>
 </section>
 
 <div class="final">
-    📍 COBERTURA TOTAL: NORTE, SUR, CENTRO Y VALLES DE QUITO 🚗🛠️
+    📍 COBERTURA TOTAL EN QUITO: NORTE, SUR, CENTRO Y VALLES 🛠️🚗
 </div>
 
-<a href="https://wa.me" class="whatsapp-float" title="Contactar por WhatsApp">💬</a>
+<a href="https://wa.me" class="whatsapp-float" title="Agendar Técnico por WhatsApp">💬</a>
 
 </body>
 </html>
