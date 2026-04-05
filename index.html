@@ -4,7 +4,46 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Arreglo y reparación de electrodomésticos en Quito</title>
+<title>Reparación de electrodomésticos en Quito | Lavadoras, Secadoras, Refrigeradoras 24 horas</title>
+
+<meta name="description" content="Servicio técnico en Quito especializado en reparación de lavadoras, secadoras, refrigeradoras, calefones y cocinas de inducción. Atención inmediata a domicilio 24 horas.">
+
+<meta name="keywords" content="reparación lavadoras Quito, arreglo lavadoras Quito, técnico lavadoras Quito, reparación refrigeradoras Quito, arreglo calefones Quito, reparación secadoras Quito, servicio técnico Quito electrodomésticos, reparación urgente Quito">
+
+<meta name="robots" content="index, follow">
+<meta name="author" content="Servicio Técnico Quito">
+
+<!-- SEO LOCAL -->
+<meta name="geo.region" content="EC-P">
+<meta name="geo.placename" content="Quito">
+
+<!-- OPEN GRAPH -->
+<meta property="og:title" content="Reparación de electrodomésticos en Quito">
+<meta property="og:description" content="Servicio técnico en Quito especializado en reparación de electrodomésticos. Atención inmediata.">
+<meta property="og:image" content="https://raw.githubusercontent.com/PaulTyV/Reparaciones-Quito/main/Messenger_creation_CFE11514-811B-40EC-BF57-596DE2BA0635.jpeg">
+<meta property="og:type" content="website">
+
+<!-- CANONICAL -->
+<link rel="canonical" href="https://paultyv.github.io/Reparaciones-Quito/">
+
+<!-- GOOGLE STRUCTURED DATA -->
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "LocalBusiness",
+"name": "Servicio Técnico Quito",
+"image": "https://raw.githubusercontent.com/PaulTyV/Reparaciones-Quito/main/Messenger_creation_CFE11514-811B-40EC-BF57-596DE2BA0635.jpeg",
+"telephone": "+593958707904",
+"address": {
+  "@type": "PostalAddress",
+  "addressLocality": "Quito",
+  "addressCountry": "EC"
+},
+"description": "Servicio técnico especializado en reparación de electrodomésticos en Quito.",
+"areaServed": "Quito",
+"url": "https://paultyv.github.io/Reparaciones-Quito/"
+}
+</script>
 
 <style>
 body{
@@ -14,7 +53,7 @@ background:#020617;
 color:white;
 }
 
-/* NEÓN SUAVE (NO TOCA HERO) */
+/* NEÓN */
 body::before{
 content:"";
 position:fixed;
@@ -27,7 +66,20 @@ z-index:-1;
 pointer-events:none;
 }
 
-/* HEADER */
+/* MUÑECO */
+body::after{
+content:"";
+position:fixed;
+bottom:20px;
+left:20px;
+width:140px;
+height:140px;
+background:url('https://cdn-icons-png.flaticon.com/512/921/921347.png') no-repeat center/contain;
+opacity:0.12;
+z-index:-1;
+pointer-events:none;
+}
+
 header{
 background:#0f172a;
 padding:15px;
@@ -36,7 +88,6 @@ justify-content:space-between;
 align-items:center;
 }
 
-/* HERO (NO TOCADO) */
 .hero{
 background:url('https://raw.githubusercontent.com/PaulTyV/Reparaciones-Quito/main/Messenger_creation_CFE11514-811B-40EC-BF57-596DE2BA0635.jpeg') center/cover no-repeat;
 text-align:center;
@@ -61,11 +112,6 @@ font-size:42px;
 text-shadow:2px 2px 10px rgba(0,0,0,1);
 }
 
-.hero p{
-position:relative;
-}
-
-/* BOTONES (ARREGLADOS) */
 .btn{
 display:inline-block;
 padding:18px 30px;
@@ -79,15 +125,9 @@ position:relative;
 z-index:2;
 }
 
-.llamar{
-background:#22c55e;
-}
+.llamar{background:#22c55e;}
+.whatsapp{background:#16a34a;}
 
-.whatsapp{
-background:#16a34a;
-}
-
-/* SERVICIOS */
 .servicios{
 padding:40px;
 text-align:center;
@@ -112,11 +152,24 @@ width:100%;
 border-radius:10px;
 }
 
-.card p, .card small{
-color:#cbd5e1;
+.card p{color:#cbd5e1;font-weight:bold;}
+.card small{color:#94a3b8;}
+
+.reseñas{
+text-align:center;
+padding:50px;
+background:#0f172a;
 }
 
-/* BOTÓN FLOTANTE */
+.reseña{
+background:#1e293b;
+padding:15px;
+border-radius:10px;
+margin:10px;
+display:inline-block;
+max-width:280px;
+}
+
 .whatsapp-float{
 position:fixed;
 bottom:20px;
@@ -139,11 +192,9 @@ font-size:20px;
 </header>
 
 <section class="hero">
-<h1>Arreglo y reparación de electrodomésticos en Quito</h1>
-<p>Servicio técnico profesional a domicilio</p>
+<h1>Reparación de electrodomésticos en Quito 24 horas</h1>
 
 <a href="tel:+593958707904" class="btn llamar">📞 Llamar</a>
-
 <a href="https://wa.me/593958707904?text=Hola%20necesito%20reparación" target="_blank" class="btn whatsapp">💬 WhatsApp</a>
 </section>
 
@@ -154,22 +205,41 @@ font-size:20px;
 <div class="card">
 <img src="https://raw.githubusercontent.com/PaulTyV/Reparaciones-Quito/main/Messenger_creation_CC164A15-A128-4441-960A-078C1CBBE307.jpeg">
 <p><strong>Arreglo de lavadoras</strong></p>
-<small>Servicio rápido y garantizado.</small>
+<small>Servicio técnico de reparación de lavadoras en Quito, diagnóstico de fallas eléctricas y mecánicas.</small>
 </div>
 
 <div class="card">
 <img src="https://raw.githubusercontent.com/PaulTyV/Reparaciones-Quito/main/Messenger_creation_7275BC92-FB74-4E36-B05C-CADBE635A66E.jpeg">
 <p><strong>Arreglo de calefones</strong></p>
-<small>Servicio profesional.</small>
+<small>Reparación de calefones en Quito, mantenimiento de válvulas, sensores y encendido.</small>
 </div>
 
 <div class="card">
 <img src="https://raw.githubusercontent.com/PaulTyV/Reparaciones-Quito/main/Messenger_creation_D34B492E-0B29-4A41-AF62-DCECCB2AFDB4.jpeg">
 <p><strong>Arreglo de secadoras</strong></p>
-<small>Diagnóstico preciso.</small>
+<small>Servicio técnico de reparación de secadoras en Quito, revisión de resistencias y ventilación.</small>
 </div>
 
 </div>
+</section>
+
+<section class="reseñas">
+<h2>Reseñas de clientes</h2>
+
+<div class="reseña">⭐⭐⭐⭐⭐<br>"Excelente reparación de lavadoras."<br><b>- Carlos</b></div>
+<div class="reseña">⭐⭐⭐⭐⭐<br>"Calefón arreglado el mismo día."<br><b>- Andrea</b></div>
+<div class="reseña">⭐⭐⭐⭐⭐<br>"Secadora funcionando perfecto."<br><b>- Luis</b></div>
+<div class="reseña">⭐⭐⭐⭐⭐<br>"Refrigeradora como nueva."<br><b>- María</b></div>
+<div class="reseña">⭐⭐⭐⭐⭐<br>"Servicio rápido y confiable."<br><b>- José</b></div>
+
+</section>
+
+<!-- TEXTO SEO FUERTE -->
+<section style="padding:40px;text-align:center;">
+<h2>Servicio técnico especializado en Quito</h2>
+<p>
+Ofrecemos servicio profesional de reparación de electrodomésticos en Quito, incluyendo lavadoras, secadoras, refrigeradoras, calefones y cocinas de inducción. Atención rápida, diagnóstico preciso y soluciones garantizadas a domicilio.
+</p>
 </section>
 
 <a href="https://wa.me/593958707904?text=Hola%20necesito%20reparación" target="_blank" class="whatsapp-float">💬</a>
