@@ -3,40 +3,54 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Servicio Técnico | Lavadoras, Refrigeración y Calefones</title>
+
+<title>Reparación de Electrodomésticos en Quito | Servicio Técnico 24/7</title>
+
+<meta name="description" content="Reparación de lavadoras, secadoras, refrigeradoras y calefones en Quito. Servicio rápido a domicilio con garantía. Llámanos ahora.">
 
 <style>
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f7fa;
+  color: #111;
+}
+
+/* HEADER */
+header {
   background: #0f172a;
   color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
 }
 
-header {
-  background: linear-gradient(90deg, #020617, #1e293b);
-  padding: 40px 20px;
-  text-align: center;
-}
-
-h1 {
-  margin: 0;
-  font-size: 30px;
-  color: #22c55e;
-}
-
+/* HERO */
 .hero {
-  padding: 40px 20px;
+  background: linear-gradient(to right, #0f172a, #1e293b);
+  color: white;
   text-align: center;
+  padding: 70px 20px;
+}
+
+.hero h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
 }
 
 .btn {
-  display: inline-block;
-  padding: 12px 20px;
-  margin: 10px;
-  border-radius: 8px;
+  padding: 15px 25px;
+  border-radius: 6px;
   text-decoration: none;
   font-weight: bold;
+  margin: 10px;
+  display: inline-block;
 }
 
 .call {
@@ -49,27 +63,80 @@ h1 {
   color: white;
 }
 
-.section {
-  padding: 30px 20px;
-  text-align: center;
+/* BENEFICIOS */
+.benefits {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: white;
+  padding: 30px;
+  gap: 20px;
 }
 
-.grid {
+.benefit {
+  background: #f1f5f9;
+  padding: 15px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+/* SERVICIOS */
+.section {
+  padding: 50px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.services {
   display: grid;
-  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
 }
 
 .card {
-  background: #1e293b;
-  padding: 20px;
-  border-radius: 10px;
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
-footer {
-  background: #020617;
+/* TESTIMONIOS */
+.review {
+  background: white;
   padding: 20px;
+  border-radius: 8px;
+  margin: 10px 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* CTA FINAL */
+.cta {
+  background: #0f172a;
+  color: white;
   text-align: center;
-  font-size: 14px;
+  padding: 60px 20px;
+}
+
+/* FOOTER */
+footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* WHATSAPP FLOAT */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25d366;
+  color: white;
+  padding: 15px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
 }
 </style>
 </head>
@@ -77,46 +144,58 @@ footer {
 <body>
 
 <header>
-  <h1>Servicio Técnico Profesional</h1>
-  <p>Reparación rápida y garantizada a domicilio</p>
+  <div>Servicio Técnico Quito</div>
+  <div>📞 +593 95 870 7904</div>
 </header>
 
 <section class="hero">
-  <h2>Especialistas en electrodomésticos</h2>
-  <p>Atendemos el mismo día</p>
+  <h1>Reparación de Electrodomésticos en Quito</h1>
+  <p>Servicio profesional a domicilio con garantía</p>
 
-  <a href="tel:1234567890" class="btn call">📞 Llamar ahora</a>
-  <a href="https://wa.me/11234567890" class="btn whatsapp">💬 WhatsApp</a>
+  <a href="tel:+593958707904" class="btn call">📞 Llamar ahora</a>
+  <a href="https://wa.me/593958707904" class="btn whatsapp">💬 WhatsApp</a>
+</section>
+
+<section class="benefits">
+  <div class="benefit">✔ Atención inmediata</div>
+  <div class="benefit">✔ Servicio a domicilio</div>
+  <div class="benefit">✔ Técnicos certificados</div>
+  <div class="benefit">✔ Garantía real</div>
 </section>
 
 <section class="section">
-  <h2>Servicios</h2>
-  <div class="grid">
+  <h2 style="text-align:center;">Servicios</h2>
 
-    <div class="card">🧺 Reparación de lavadoras</div>
-    <div class="card">🔥 Reparación de secadoras</div>
-    <div class="card">❄️ Reparación de refrigeradoras</div>
-    <div class="card">⚡ Cocinas de inducción</div>
-    <div class="card">🚿 Calefones a gas</div>
-    <div class="card">💧 Calefones eléctricos</div>
-
+  <div class="services">
+    <div class="card">Lavadoras</div>
+    <div class="card">Secadoras</div>
+    <div class="card">Refrigeradoras</div>
+    <div class="card">Cocinas de inducción</div>
+    <div class="card">Calefones a gas</div>
+    <div class="card">Calefones eléctricos</div>
   </div>
 </section>
 
 <section class="section">
-  <h2>¿Por qué elegirnos?</h2>
-  <p>
-  ✔ Servicio a domicilio<br>
-  ✔ Técnicos con experiencia<br>
-  ✔ Diagnóstico rápido<br>
-  ✔ Precios justos<br>
-  ✔ Garantía en reparaciones
-  </p>
+  <h2 style="text-align:center;">Clientes satisfechos</h2>
+
+  <div class="review">⭐️⭐️⭐️⭐️⭐️ Excelente servicio, llegaron rápido</div>
+  <div class="review">⭐️⭐️⭐️⭐️⭐️ Muy profesionales, solucionaron todo</div>
+  <div class="review">⭐️⭐️⭐️⭐️⭐️ 100% recomendados</div>
+</section>
+
+<section class="cta">
+  <h2>¿Necesitas reparación urgente?</h2>
+  <p>Llámanos ahora y solucionamos tu problema hoy mismo</p>
+
+  <a href="tel:+593958707904" class="btn call">📞 Llamar ahora</a>
 </section>
 
 <footer>
-  Servicio Técnico | Atención 24/7
+  © Servicio Técnico Quito | +593 95 870 7904
 </footer>
+
+<a href="https://wa.me/593958707904" class="whatsapp-float">💬</a>
 
 </body>
 </html>
