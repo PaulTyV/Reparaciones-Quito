@@ -3,47 +3,36 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Servicio Técnico en Quito | Reparación de Electrodomésticos</title>
 
-<meta name="description" content="Reparación profesional de lavadoras, secadoras, refrigeradoras y calefones en Quito. Atención inmediata a domicilio.">
+<title>Reparación de Lavadoras en Quito | Servicio Técnico</title>
+
+<meta name="description" content="Reparación de lavadoras en Quito. Servicio rápido, técnico profesional y garantía. Atención a domicilio el mismo día.">
 
 <style>
 body{
   margin:0;
-  font-family: 'Segoe UI', sans-serif;
-  background:#0b1220;
-  color:white;
+  font-family:Arial, sans-serif;
+  background:#f5f5f5;
+  color:#111;
 }
 
-/* HEADER */
 header{
+  background:#0f172a;
+  color:white;
+  padding:15px;
   display:flex;
   justify-content:space-between;
-  padding:15px 20px;
-  background:#020617;
-  position:sticky;
-  top:0;
 }
 
-header b{
-  color:#22c55e;
-}
-
-/* HERO */
 .hero{
+  background:#111827;
+  color:white;
+  padding:60px 20px;
   text-align:center;
-  padding:80px 20px;
-  background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
-  url('https://images.unsplash.com/photo-1581578731548-c64695cc6952');
-  background-size:cover;
-}
-
-.hero h1{
-  font-size:32px;
 }
 
 .btn{
-  padding:14px 24px;
+  padding:15px 25px;
   border-radius:6px;
   text-decoration:none;
   margin:10px;
@@ -54,79 +43,28 @@ header b{
 .call{background:#22c55e;color:white;}
 .whatsapp{background:#25d366;color:white;}
 
-/* BENEFITS */
-.benefits{
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
-  gap:10px;
-  padding:20px;
-}
-
-.benefit{
-  background:#1e293b;
-  padding:10px 15px;
-  border-radius:5px;
-}
-
-/* SERVICES */
 .section{
-  padding:50px 20px;
-  max-width:1100px;
+  padding:40px 20px;
+  max-width:900px;
   margin:auto;
+  background:white;
+  margin-top:20px;
+  border-radius:8px;
 }
 
-.services{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:20px;
+ul{
+  padding-left:20px;
 }
 
-.card{
-  background:#020617;
-  border-radius:10px;
-  overflow:hidden;
-  box-shadow:0 5px 15px rgba(0,0,0,0.5);
-  transition:0.3s;
-}
-
-.card:hover{
-  transform:scale(1.05);
-}
-
-.card img{
-  width:100%;
-  height:160px;
-  object-fit:cover;
-}
-
-.card h3{
-  padding:15px;
-}
-
-/* TESTIMONIOS */
-.review{
-  background:#020617;
-  padding:20px;
-  border-radius:10px;
-  margin:10px 0;
-}
-
-/* CTA FINAL */
-.cta{
-  text-align:center;
-  padding:60px 20px;
-  background:#020617;
-}
-
-/* FOOTER */
 footer{
+  background:black;
+  color:white;
   text-align:center;
   padding:20px;
-  background:black;
+  margin-top:20px;
 }
 
-/* WHATSAPP FLOAT */
+/* BOTÓN WHATSAPP */
 .whatsapp-float{
   position:fixed;
   bottom:20px;
@@ -135,7 +73,7 @@ footer{
   padding:15px;
   border-radius:50%;
   text-decoration:none;
-  font-size:20px;
+  color:white;
 }
 </style>
 </head>
@@ -148,70 +86,56 @@ footer{
 </header>
 
 <section class="hero">
-  <h1>Reparación de Electrodomésticos en Quito</h1>
+  <h1>Reparación de Lavadoras en Quito</h1>
   <p>Servicio profesional a domicilio con garantía</p>
 
   <a href="tel:+593958707904" class="btn call">📞 Llamar ahora</a>
-  <a href="https://wa.me/593958707904?text=Hola%20necesito%20un%20técnico" class="btn whatsapp">💬 WhatsApp</a>
-</section>
-
-<section class="benefits">
-  <div class="benefit">✔ Atención inmediata</div>
-  <div class="benefit">✔ Servicio a domicilio</div>
-  <div class="benefit">✔ Técnicos certificados</div>
-  <div class="benefit">✔ Garantía real</div>
+  <a href="https://wa.me/593958707904?text=Hola%20necesito%20reparar%20mi%20lavadora" class="btn whatsapp">💬 WhatsApp</a>
 </section>
 
 <section class="section">
-  <h2 style="text-align:center;">Servicios</h2>
+  <h2>Servicio técnico de lavadoras</h2>
 
-  <div class="services">
+  <p>
+  Reparamos lavadoras de todas las marcas. Contamos con técnicos especializados para solucionar cualquier tipo de falla de forma rápida y segura.
+  </p>
 
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1604335399105-a0c585fd81a1">
-      <h3>Lavadoras</h3>
-    </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1598514982841-1b9b4c8d9c65">
-      <h3>Secadoras</h3>
-    </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952">
-      <h3>Refrigeradoras</h3>
-    </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c">
-      <h3>Cocinas de inducción</h3>
-    </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1615874959474-d609969a20ed">
-      <h3>Calefones a gas</h3>
-    </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
-      <h3>Calefones eléctricos</h3>
-    </div>
-
-  </div>
+  <p><b>✔ Atención inmediata</b></p>
+  <p><b>✔ Servicio a domicilio</b></p>
+  <p><b>✔ Garantía en todas las reparaciones</b></p>
 </section>
 
 <section class="section">
-  <h2 style="text-align:center;">Clientes satisfechos</h2>
+  <h2>Problemas que solucionamos</h2>
 
-  <div class="review">⭐️⭐️⭐️⭐️⭐️ Llegaron rápido y solucionaron todo</div>
-  <div class="review">⭐️⭐️⭐️⭐️⭐️ Muy profesionales, recomendados</div>
+  <ul>
+    <li>Lavadora no enciende</li>
+    <li>No centrifuga</li>
+    <li>No drena el agua</li>
+    <li>Hace ruido fuerte</li>
+    <li>Fuga de agua</li>
+    <li>Problemas electrónicos</li>
+  </ul>
 </section>
 
-<section class="cta">
-  <h2>¿Necesitas ayuda urgente?</h2>
-  <p>Contáctanos ahora y resolvemos hoy mismo</p>
+<section class="section">
+  <h2>¿Por qué elegirnos?</h2>
+
+  <ul>
+    <li>✔ Técnicos con experiencia</li>
+    <li>✔ Atención el mismo día</li>
+    <li>✔ Precios justos</li>
+    <li>✔ Servicio garantizado</li>
+  </ul>
+</section>
+
+<section class="section">
+  <h2>Contáctanos ahora</h2>
+
+  <p>Estamos listos para ayudarte. Llámanos o escríbenos por WhatsApp.</p>
 
   <a href="tel:+593958707904" class="btn call">📞 Llamar ahora</a>
+  <a href="https://wa.me/593958707904" class="btn whatsapp">💬 WhatsApp</a>
 </section>
 
 <footer>
