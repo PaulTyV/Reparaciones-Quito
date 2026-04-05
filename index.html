@@ -42,12 +42,45 @@
 </script>
 
 <style>
-body{margin:0;font-family:Arial;background:#f5f5f5;}
 
-header{background:#0f172a;color:white;display:flex;justify-content:space-between;align-items:center;padding:15px;}
+/* 🔥 LETRA MÁS GRANDE EN TODA LA WEB */
+html {
+  font-size: 18px;
+}
+
+/* 💙 FONDO NEÓN AZUL */
+body{
+  margin:0;
+  font-family:Arial;
+  background: linear-gradient(135deg, #020617, #020617);
+  color:#ffffff;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(0,140,255,0.18), transparent 60%);
+  z-index: -1;
+}
+
+/* HEADER */
+header{
+  background:#0f172a;
+  color:white;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px;
+}
+
 .logo{display:flex;align-items:center;}
 .logo img{height:50px;margin-right:10px;}
 
+/* HERO */
 .hero{
 background:url('https://raw.githubusercontent.com/PaulTyV/Reparaciones-Quito/main/Messenger_creation_CFE11514-811B-40EC-BF57-596DE2BA0635.jpeg') center/cover no-repeat;
 color:white;
@@ -63,28 +96,67 @@ top:0;
 left:0;
 width:100%;
 height:100%;
-background:rgba(0,0,0,0.5);
+background:rgba(0,0,0,0.6);
 }
 
 .hero h1{
 position:relative;
-font-size:40px;
-text-shadow:2px 2px 10px rgba(0,0,0,0.9);
+font-size:45px;
+text-shadow:2px 2px 12px rgba(0,0,0,1);
 }
 
-.btn{padding:15px 25px;border-radius:5px;color:white;text-decoration:none;margin:10px;display:inline-block;}
+.btn{
+padding:15px 25px;
+border-radius:5px;
+color:white;
+text-decoration:none;
+margin:10px;
+display:inline-block;
+}
+
 .llamar{background:#22c55e;}
 .whatsapp{background:#16a34a;}
 
+/* SERVICIOS */
 .servicios{text-align:center;padding:40px;}
-.grid{display:flex;flex-wrap:wrap;justify-content:center;gap:20px;}
 
-.card{background:white;padding:15px;border-radius:10px;max-width:250px;}
-.card img{width:100%;border-radius:10px;}
+.grid{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
 
-.reseñas{text-align:center;padding:40px;background:#eee;}
-.reseña{background:white;padding:15px;border-radius:10px;margin:10px;display:inline-block;max-width:300px;}
+.card{
+background:#1e293b;
+padding:15px;
+border-radius:10px;
+max-width:250px;
+}
 
+.card img{
+width:100%;
+border-radius:10px;
+}
+
+p{color:#cbd5e1;}
+
+/* RESEÑAS */
+.reseñas{
+text-align:center;
+padding:40px;
+}
+
+.reseña{
+background:#1e293b;
+padding:15px;
+border-radius:10px;
+margin:10px;
+display:inline-block;
+max-width:300px;
+}
+
+/* BOTÓN WHATSAPP */
 .whatsapp-float{
 position:fixed;
 bottom:20px;
@@ -94,7 +166,9 @@ color:white;
 padding:15px;
 border-radius:50%;
 font-size:20px;
+box-shadow:0 0 15px rgba(0,140,255,0.7);
 }
+
 </style>
 
 </head>
