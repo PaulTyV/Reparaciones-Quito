@@ -6,116 +6,100 @@
 
 <title>Reparación de Electrodomésticos en Quito | Servicio Técnico 24/7</title>
 
-<meta name="description" content="Reparación de lavadoras, secadoras, refrigeradoras y calefones en Quito. Servicio rápido a domicilio con garantía. Llámanos ahora.">
-
 <style>
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: Arial, sans-serif;
   background: #f5f7fa;
-  color: #111;
 }
 
 /* HEADER */
 header {
   background: #0f172a;
   color: white;
-  padding: 15px 20px;
+  padding: 15px;
   display: flex;
   justify-content: space-between;
-  font-size: 14px;
 }
 
 /* HERO */
 .hero {
-  background: linear-gradient(to right, #0f172a, #1e293b);
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+  url('https://images.unsplash.com/photo-1581578731548-c64695cc6952');
+  background-size: cover;
+  background-position: center;
   color: white;
   text-align: center;
-  padding: 70px 20px;
+  padding: 80px 20px;
 }
 
 .hero h1 {
   font-size: 30px;
-  margin-bottom: 10px;
-}
-
-.hero p {
-  font-size: 18px;
-  margin-bottom: 20px;
 }
 
 .btn {
-  padding: 15px 25px;
+  padding: 14px 22px;
   border-radius: 6px;
   text-decoration: none;
-  font-weight: bold;
   margin: 10px;
   display: inline-block;
+  font-weight: bold;
 }
 
-.call {
-  background: #22c55e;
-  color: white;
-}
-
-.whatsapp {
-  background: #25d366;
-  color: white;
-}
+.call { background: #22c55e; color: white; }
+.whatsapp { background: #25d366; color: white; }
 
 /* BENEFICIOS */
 .benefits {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 20px;
   background: white;
-  padding: 30px;
-  gap: 20px;
+  gap: 10px;
 }
 
 .benefit {
-  background: #f1f5f9;
-  padding: 15px 20px;
-  border-radius: 6px;
-  font-weight: bold;
+  background: #e2e8f0;
+  padding: 10px 15px;
+  border-radius: 5px;
 }
 
 /* SERVICIOS */
 .section {
-  padding: 50px 20px;
-  max-width: 1100px;
+  padding: 40px 20px;
+  max-width: 1000px;
   margin: auto;
 }
 
 .services {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
 }
 
 .card {
   background: white;
-  padding: 25px;
   border-radius: 8px;
+  overflow: hidden;
   text-align: center;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+}
+
+.card h3 {
+  padding: 10px;
 }
 
 /* TESTIMONIOS */
 .review {
   background: white;
-  padding: 20px;
-  border-radius: 8px;
+  padding: 15px;
   margin: 10px 0;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-}
-
-/* CTA FINAL */
-.cta {
-  background: #0f172a;
-  color: white;
-  text-align: center;
-  padding: 60px 20px;
+  border-radius: 6px;
 }
 
 /* FOOTER */
@@ -134,9 +118,9 @@ footer {
   background: #25d366;
   color: white;
   padding: 15px;
-  border-radius: 50px;
+  border-radius: 50%;
   text-decoration: none;
-  font-weight: bold;
+  font-size: 20px;
 }
 </style>
 </head>
@@ -144,7 +128,7 @@ footer {
 <body>
 
 <header>
-  <div>Servicio Técnico Quito</div>
+  <div><b>Servicio Técnico Quito</b></div>
   <div>📞 +593 95 870 7904</div>
 </header>
 
@@ -153,26 +137,51 @@ footer {
   <p>Servicio profesional a domicilio con garantía</p>
 
   <a href="tel:+593958707904" class="btn call">📞 Llamar ahora</a>
-  <a href="https://wa.me/593958707904" class="btn whatsapp">💬 WhatsApp</a>
+  <a href="https://wa.me/593958707904?text=Hola%20necesito%20un%20técnico" class="btn whatsapp">💬 WhatsApp</a>
 </section>
 
 <section class="benefits">
   <div class="benefit">✔ Atención inmediata</div>
   <div class="benefit">✔ Servicio a domicilio</div>
   <div class="benefit">✔ Técnicos certificados</div>
-  <div class="benefit">✔ Garantía real</div>
+  <div class="benefit">✔ Garantía</div>
 </section>
 
 <section class="section">
   <h2 style="text-align:center;">Servicios</h2>
 
   <div class="services">
-    <div class="card">Lavadoras</div>
-    <div class="card">Secadoras</div>
-    <div class="card">Refrigeradoras</div>
-    <div class="card">Cocinas de inducción</div>
-    <div class="card">Calefones a gas</div>
-    <div class="card">Calefones eléctricos</div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1626806787461-102c1bfaaea1">
+      <h3>Lavadoras</h3>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c">
+      <h3>Secadoras</h3>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1586201375792-1c92d6c1c7c3">
+      <h3>Refrigeradoras</h3>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1581579188871-45ea61f2a6d9">
+      <h3>Cocinas de inducción</h3>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1598300056393-4aac492f4344">
+      <h3>Calefones a gas</h3>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115">
+      <h3>Calefones eléctricos</h3>
+    </div>
+
   </div>
 </section>
 
@@ -180,15 +189,7 @@ footer {
   <h2 style="text-align:center;">Clientes satisfechos</h2>
 
   <div class="review">⭐️⭐️⭐️⭐️⭐️ Excelente servicio, llegaron rápido</div>
-  <div class="review">⭐️⭐️⭐️⭐️⭐️ Muy profesionales, solucionaron todo</div>
-  <div class="review">⭐️⭐️⭐️⭐️⭐️ 100% recomendados</div>
-</section>
-
-<section class="cta">
-  <h2>¿Necesitas reparación urgente?</h2>
-  <p>Llámanos ahora y solucionamos tu problema hoy mismo</p>
-
-  <a href="tel:+593958707904" class="btn call">📞 Llamar ahora</a>
+  <div class="review">⭐️⭐️⭐️⭐️⭐️ Muy profesionales</div>
 </section>
 
 <footer>
