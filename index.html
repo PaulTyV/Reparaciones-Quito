@@ -4,130 +4,101 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Reparación de electrodomésticos en Quito 24 horas | Servicio técnico urgente</title>
+<title>Reparación de electrodomésticos en Quito | Lavadoras, Refrigeradoras, Calefones</title>
 
-<meta name="description" content="Servicio técnico en Quito 24 horas. Reparación de lavadoras, secadoras, refrigeradoras, calefones y cocinas de inducción. Repuestos originales Whirlpool, Samsung, LG, Mabe, General Electric, Indurama, Teka.">
+<meta name="description" content="Servicio técnico en Quito especializado en reparación de lavadoras, refrigeradoras, calefones, secadoras y cocinas de inducción. Atención inmediata a domicilio con garantía.">
 
-<meta name="keywords" content="reparación lavadoras Quito, técnico Quito, reparación refrigeradoras Quito, arreglo calefones Quito, reparación secadoras Quito, servicio técnico Quito">
+<meta name="keywords" content="reparación lavadoras Quito, arreglo refrigeradoras Quito, técnico calefones Quito, servicio técnico electrodomésticos Quito, reparación secadoras Quito, cocinas inducción Quito">
 
 <meta name="robots" content="index, follow">
+
+<!-- SEO LOCAL -->
+<meta name="geo.region" content="EC-P">
+<meta name="geo.placename" content="Quito">
+
+<!-- OPEN GRAPH -->
+<meta property="og:title" content="Servicio Técnico Quito - Reparación de electrodomésticos">
+<meta property="og:description" content="Reparación profesional de electrodomésticos en Quito con atención inmediata.">
+<meta property="og:image" content="Messenger_creation_CFE11514-811B-40EC-BF57-596DE2BA0635.jpeg">
+
+<!-- STRUCTURED DATA -->
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "LocalBusiness",
+"name": "Servicio Técnico Quito",
+"telephone": "+593958707904",
+"address": {
+"@type": "PostalAddress",
+"addressLocality": "Quito",
+"addressCountry": "EC"
+},
+"description": "Servicio técnico especializado en reparación de electrodomésticos en Quito",
+"areaServed": "Quito"
+}
+</script>
 
 <style>
 body{
 margin:0;
 font-family:Arial;
-background:#020617;
+background: radial-gradient(circle at top, #001a33, #000814);
 color:white;
 font-size:18px;
 }
 
-/* NEÓN */
-body::before{
-content:"";
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:radial-gradient(circle at center, rgba(0,140,255,0.12), transparent 70%);
-z-index:-1;
-pointer-events:none;
-}
-
-/* MUÑECO */
-body::after{
-content:"";
-position:fixed;
-bottom:20px;
-left:20px;
-width:120px;
-height:120px;
-background:url('https://cdn-icons-png.flaticon.com/512/921/921347.png') no-repeat center/contain;
-opacity:0.10;
-z-index:-1;
-pointer-events:none;
-}
-
 header{
-background:#0f172a;
-padding:15px;
+background:#020617;
 display:flex;
 justify-content:space-between;
+padding:15px;
 align-items:center;
 }
 
+.logo{display:flex;align-items:center;}
+.logo img{height:50px;margin-right:10px;}
+
 .hero{
 background:url('Messenger_creation_CFE11514-811B-40EC-BF57-596DE2BA0635.jpeg') center/cover no-repeat;
+padding:120px 20px;
 text-align:center;
-padding:100px 20px;
-position:relative;
-}
-
-.hero::before{
-content:"";
-position:absolute;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:rgba(0,0,0,0.5);
 }
 
 .hero h1{
-position:relative;
-font-size:42px;
-text-shadow:2px 2px 10px black;
+font-size:36px;
+text-shadow:0 0 15px rgba(0,255,255,0.8);
 }
 
 .hero p{
-position:relative;
-font-size:18px;
+font-size:20px;
+background:rgba(0,0,0,0.6);
+display:inline-block;
+padding:5px 10px;
+border-radius:5px;
 }
 
 .btn{
 display:inline-block;
-padding:18px 30px;
 margin:10px;
+padding:15px 25px;
 border-radius:8px;
-font-size:18px;
-font-weight:bold;
 color:white;
 text-decoration:none;
-position:relative;
-z-index:2;
+font-weight:bold;
 }
 
 .llamar{background:#22c55e;}
 .whatsapp{background:#16a34a;}
 
-.marcas{
-text-align:center;
-padding:30px;
-}
-
-.marcas img{
-max-width:90%;
-margin-top:10px;
-border-radius:10px;
-}
-
-.servicios{
-padding:40px;
-text-align:center;
-}
-
-.grid{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:20px;
-}
+.servicios{text-align:center;padding:40px;}
+.grid{display:flex;flex-wrap:wrap;justify-content:center;gap:20px;}
 
 .card{
-background:#1e293b;
+background:#0f172a;
 padding:15px;
 border-radius:10px;
-max-width:250px;
+max-width:260px;
+box-shadow:0 0 15px rgba(0,255,255,0.2);
 }
 
 .card img{
@@ -135,22 +106,31 @@ width:100%;
 border-radius:10px;
 }
 
-.card p{color:#cbd5e1;font-weight:bold;}
-.card small{color:#94a3b8;}
+.marcas{
+text-align:center;
+padding:40px;
+}
+
+.marcas img{
+max-width:300px;
+width:90%;
+border-radius:10px;
+margin-top:20px;
+box-shadow:0 0 20px rgba(0,255,255,0.4);
+}
 
 .reseñas{
 text-align:center;
-padding:50px;
-background:#0f172a;
+padding:40px;
 }
 
 .reseña{
-background:#1e293b;
+background:#0f172a;
 padding:15px;
 border-radius:10px;
 margin:10px;
 display:inline-block;
-max-width:280px;
+max-width:300px;
 }
 
 .whatsapp-float{
@@ -170,87 +150,86 @@ font-size:20px;
 <body>
 
 <header>
-<div><strong>Servicio Técnico Quito</strong></div>
+<div class="logo">
+<img src="Messenger_creation_B0E9F509-8D6F-4114-BB93-D598F4F19911.jpeg">
+<strong>Servicio Técnico Quito</strong>
+</div>
 <div>📞 +593 95 870 7904</div>
 </header>
 
 <section class="hero">
-<h1>Reparación de electrodomésticos en Quito 24 horas</h1>
+<h1>Reparación de electrodomésticos en Quito</h1>
+<p>Servicio técnico profesional a domicilio</p>
 
-<p>Más de 100 clientes atendidos • Servicio a domicilio • Atención inmediata</p>
-
-<p><strong>✔ Repuestos originales: Whirlpool, Samsung, LG, Mabe, General Electric, Indurama, Teka.</strong></p>
+<br>
 
 <a href="tel:+593958707904" class="btn llamar">📞 Llamar ahora</a>
-<a href="https://wa.me/593958707904?text=Hola%20necesito%20reparación%20urgente" target="_blank" class="btn whatsapp">💬 WhatsApp inmediato</a>
-</section>
-
-<!-- MARCAS -->
-<section class="marcas">
-<h2>Trabajamos con todas las marcas</h2>
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Samsung_Logo.svg/512px-Samsung_Logo.svg.png">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Whirlpool_Corporation_Logo.svg/512px-Whirlpool_Corporation_Logo.svg.png">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/LG_symbol.svg/512px-LG_symbol.svg.png">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/General_Electric_logo.svg/512px-General_Electric_logo.svg.png">
+<a href="https://wa.me/593958707904" class="btn whatsapp">💬 WhatsApp inmediato</a>
 
 </section>
 
 <section class="servicios">
-<h2>Servicio técnico en Quito</h2>
+<h2>Servicios técnicos en Quito</h2>
 
 <div class="grid">
 
 <div class="card">
 <img src="Messenger_creation_CC164A15-A128-4441-960A-078C1CBBE307.jpeg">
-<p><strong>Arreglo de lavadoras</strong></p>
-<small>Reparación de lavadoras en Quito, diagnóstico técnico profesional.</small>
+<p><strong>Reparación de lavadoras en Quito</strong></p>
+<small>Servicio técnico especializado en reparación rápida y garantizada de lavadoras.</small>
 </div>
 
 <div class="card">
 <img src="Messenger_creation_7275BC92-FB74-4E36-B05C-CADBE635A66E.jpeg">
-<p><strong>Arreglo de calefones</strong></p>
-<small>Reparación de calefones a gas y eléctricos.</small>
+<p><strong>Reparación de calefones en Quito</strong></p>
+<small>Diagnóstico preciso y reparación profesional de calefones a domicilio.</small>
 </div>
 
 <div class="card">
 <img src="Messenger_creation_D34B492E-0B29-4A41-AF62-DCECCB2AFDB4.jpeg">
-<p><strong>Arreglo de secadoras</strong></p>
-<small>Reparación de secadoras y mantenimiento técnico.</small>
+<p><strong>Reparación de secadoras en Quito</strong></p>
+<small>Solución efectiva para secadoras con técnicos expertos.</small>
 </div>
 
 <div class="card">
 <img src="Messenger_creation_2C602D01-B200-460C-B30C-A7C5BD51ADFB.jpeg">
-<p><strong>Arreglo de cocinas de inducción</strong></p>
-<small>Reparación electrónica especializada de cocinas de inducción.</small>
+<p><strong>Reparación de cocinas de inducción en Quito</strong></p>
+<small>Servicio técnico profesional para cocinas de inducción.</small>
 </div>
 
 <div class="card">
 <img src="Messenger_creation_EB1CE184-2734-4C36-ADBA-C153E5877C6B.jpeg">
-<p><strong>Arreglo de refrigeradoras</strong></p>
-<small>Reparación de refrigeradoras y carga de gas refrigerante.</small>
+<p><strong>Reparación de refrigeradoras en Quito</strong></p>
+<small>Reparación rápida y garantizada de refrigeradoras.</small>
 </div>
 
 </div>
+</section>
+
+<section class="marcas">
+<h2>Trabajamos con todas las marcas</h2>
+
+<img src="Messenger_creation_D86CC0EC-8D94-4399-9F1A-A4CF93C2D70B.jpeg">
+
+<p>
+Repuestos originales de todas las marcas:  
+<br><br>
+<strong>Whirlpool • Samsung • LG • Mabe • General Electric • Indurama • Teka</strong>
+</p>
 </section>
 
 <section class="reseñas">
 <h2>Reseñas de clientes</h2>
 
-<div class="reseña">⭐⭐⭐⭐⭐<br>"Excelente servicio."<br><b>- Carlos</b></div>
-<div class="reseña">⭐⭐⭐⭐⭐<br>"Muy rápido y confiable."<br><b>- Andrea</b></div>
-<div class="reseña">⭐⭐⭐⭐⭐<br>"Trabajo profesional."<br><b>- Luis</b></div>
-<div class="reseña">⭐⭐⭐⭐⭐<br>"Recomendado 100%."<br><b>- María</b></div>
-<div class="reseña">⭐⭐⭐⭐⭐<br>"Solución inmediata."<br><b>- José</b></div>
+<div class="reseña">⭐⭐⭐⭐⭐<br>Excelente reparación de lavadora<br><b>- Carlos</b></div>
+<div class="reseña">⭐⭐⭐⭐⭐<br>Servicio rápido y confiable<br><b>- Andrea</b></div>
+<div class="reseña">⭐⭐⭐⭐⭐<br>Me arreglaron el calefón el mismo día<br><b>- Luis</b></div>
+<div class="reseña">⭐⭐⭐⭐⭐<br>Muy profesional y puntual<br><b>- María</b></div>
+<div class="reseña">⭐⭐⭐⭐⭐<br>Reparación garantizada<br><b>- José</b></div>
 
 </section>
 
-<section style="padding:40px;text-align:center;">
-<h2>Atendemos todo Quito y alrededores</h2>
-<p>Servicio técnico especializado en reparación de electrodomésticos en Quito con atención inmediata a domicilio.</p>
-</section>
-
-<a href="https://wa.me/593958707904?text=Hola%20necesito%20reparación%20urgente" target="_blank" class="whatsapp-float">💬</a>
+<a href="https://wa.me/593958707904" class="whatsapp-float">💬</a>
 
 </body>
 </html>
