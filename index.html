@@ -42,12 +42,40 @@
 </script>
 
 <style>
-body{margin:0;font-family:Arial;background:#f5f5f5;}
 
-header{background:#0f172a;color:white;display:flex;justify-content:space-between;align-items:center;padding:15px;}
+/* 🔵 FONDO NEÓN */
+body{
+margin:0;
+font-family:Arial;
+background:#020617;
+color:white;
+}
+
+body::before{
+content:"";
+position:fixed;
+top:-50%;
+left:-50%;
+width:200%;
+height:200%;
+background:radial-gradient(circle, rgba(0,140,255,0.15), transparent 60%);
+z-index:-1;
+}
+
+/* HEADER */
+header{
+background:#0f172a;
+color:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px;
+}
+
 .logo{display:flex;align-items:center;}
 .logo img{height:50px;margin-right:10px;}
 
+/* HERO */
 .hero{
 background:url('https://raw.githubusercontent.com/PaulTyV/Reparaciones-Quito/main/Messenger_creation_CFE11514-811B-40EC-BF57-596DE2BA0635.jpeg') center/cover no-repeat;
 color:white;
@@ -68,10 +96,16 @@ background:rgba(0,0,0,0.6);
 
 .hero h1{
 position:relative;
-font-size:40px;
-text-shadow:2px 2px 10px rgba(0,0,0,0.9);
+font-size:42px;
+text-shadow:2px 2px 12px rgba(0,0,0,1);
 }
 
+.hero p{
+position:relative;
+font-size:18px;
+}
+
+/* BOTONES */
 .btn{
 padding:18px 30px;
 border-radius:8px;
@@ -82,7 +116,7 @@ display:inline-block;
 font-size:18px;
 font-weight:bold;
 text-shadow:1px 1px 5px rgba(0,0,0,0.8);
-box-shadow:0 0 15px rgba(0,255,255,0.6);
+box-shadow:0 0 15px rgba(0,140,255,0.6);
 }
 
 .llamar{
@@ -93,15 +127,42 @@ background:linear-gradient(135deg,#22c55e,#16a34a);
 background:linear-gradient(135deg,#16a34a,#15803d);
 }
 
+/* SERVICIOS */
 .servicios{text-align:center;padding:40px;}
 .grid{display:flex;flex-wrap:wrap;justify-content:center;gap:20px;}
 
-.card{background:white;padding:15px;border-radius:10px;max-width:250px;}
-.card img{width:100%;border-radius:10px;}
+.card{
+background:#1e293b;
+padding:15px;
+border-radius:10px;
+max-width:250px;
+}
 
-.reseñas{text-align:center;padding:40px;background:#eee;}
-.reseña{background:white;padding:15px;border-radius:10px;margin:10px;display:inline-block;max-width:300px;}
+.card img{
+width:100%;
+border-radius:10px;
+}
 
+.card p, .card small{
+color:#cbd5e1;
+}
+
+/* RESEÑAS */
+.reseñas{
+text-align:center;
+padding:40px;
+}
+
+.reseña{
+background:#1e293b;
+padding:15px;
+border-radius:10px;
+margin:10px;
+display:inline-block;
+max-width:300px;
+}
+
+/* BOTÓN FLOTANTE */
 .whatsapp-float{
 position:fixed;
 bottom:20px;
@@ -111,7 +172,9 @@ color:white;
 padding:15px;
 border-radius:50%;
 font-size:20px;
+box-shadow:0 0 15px rgba(0,140,255,0.7);
 }
+
 </style>
 
 </head>
@@ -131,7 +194,8 @@ font-size:20px;
   <p>Servicio técnico profesional a domicilio</p>
 
   <a href="tel:+593958707904" class="btn llamar">📞 Llamar</a>
-  <a href="https://wa.me/593958707904" class="btn whatsapp">💬 WhatsApp</a>
+
+  <a href="https://wa.me/593958707904?text=Hola%20necesito%20reparación%20de%20electrodomésticos" target="_blank" class="btn whatsapp">💬 WhatsApp</a>
 </section>
 
 <section class="servicios">
@@ -195,7 +259,7 @@ font-size:20px;
 
 </section>
 
-<a href="https://wa.me/593958707904" class="whatsapp-float">💬</a>
+<a href="https://wa.me/593958707904?text=Hola%20necesito%20reparación%20de%20electrodomésticos" target="_blank" class="whatsapp-float">💬</a>
 
 </body>
 </html>
